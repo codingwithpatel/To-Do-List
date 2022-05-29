@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Om's To-Do List App</title>
+        <link rel="stylesheet" href="style.css"> 
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body class="inter-active">
+        <div class="box">
+            <div class="to-do-title">
+                <strong>To-Do List</strong>
+            </div>
+
+            <div class="input-button">
+                <input type="text" placeholder="Add a to-do item." id="new-item">
+                <button onclick="addItemClicked();" class="add-btn"><strong>+</strong></button> 
+            </div>
+
+            <div id="to-be-added">
+                
+            </div>
+            <div class="tracker">
+                <span class="completed">
+                    <strong>Completed:</strong> 
+                    <span class="tasks-done">
+                        0<script>updateCompleted();</script>
+                    </span>
+                </span> 
+                <span class="remaining">
+                    <strong>Remaining:</strong>
+                    <span class="tasks-remain">
+                        0<script>updateRemaining();</script>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+    </body>
+</html> 
